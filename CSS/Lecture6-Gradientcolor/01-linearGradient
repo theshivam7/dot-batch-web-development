@@ -1,1 +1,16 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiant Colors</title>
+</head>
+<body>
+    <link rel="stylesheet" href="gradient css.css.css" >
+    <div class="box"> This is DIV element </div>
+    <br>
+
+    <div class="box1"> This is Radial element </div>
+</body>
+</html>
