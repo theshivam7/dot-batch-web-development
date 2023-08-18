@@ -1,0 +1,22 @@
+.box {
+    border: 2px solid red;
+    font-weight: 900;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  
+  #box1 {
+    width: 300px;
+    height: 200px;
+  }
+  
+  #box2 {
+    max-width: 300px;
+    max-height: 220px;
+  }
+  
+  #box3 {
+    min-width: 200px;
+    min-height: 200px;
+  }
+  
