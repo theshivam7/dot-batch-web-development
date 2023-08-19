@@ -1,0 +1,22 @@
+.translate{
+    background-color: aqua;
+    transform: translate(100px, 100px);
+}
+.rotate{
+    background-color: aqua;
+    transform: rotate(-50deg)
+}
+.scale{
+    background-color: aqua;
+    margin: 200px;
+    transform: scale(2,3)
+}
+.skew{
+    background-color: aqua;
+    transform: skew(130deg)
+}
+.matrix{
+    background-color: aqua;
+    transform: matrix()
+}
+
