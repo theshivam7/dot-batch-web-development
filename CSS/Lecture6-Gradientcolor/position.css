@@ -1,0 +1,36 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to your elements */
+.box {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: relative;
+    border: 1px solid black;
+}
+
+#box3 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+/* 
+#box1 {
+    position: fixed;
+} */
+
+#box4 {
+    position: sticky;
+    top: 0px;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 2000px; /* Using min-height instead of height */
+    background-color: orange;
+}
