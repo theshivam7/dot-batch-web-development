@@ -1,0 +1,16 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translated {
+    transform: perspective(10px) translateZ(-10px);
+}
+
+.scaled {
+    margin-left: 200px;
+    /* transform: rotateZ(30deg); */
+    transform: perspective(350px) scaleZ(4) rotateX(35deg) rotateY(25deg);
+}
