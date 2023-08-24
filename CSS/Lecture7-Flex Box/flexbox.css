@@ -1,0 +1,15 @@
+.container {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 50px; /* Adjusted width for better visualization */
+    /* flex: 1; Distributes available space equally among boxes
+     */
+}
