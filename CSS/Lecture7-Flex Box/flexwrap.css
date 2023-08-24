@@ -1,0 +1,19 @@
+.container {
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-start; /* Resetting justify-content */
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+/* Keep your box styles as they are */
+.box {
+  border: 1px solid brown;
+  background-color: aqua;
+  width: 50px;
+}
