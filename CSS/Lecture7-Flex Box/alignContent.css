@@ -1,0 +1,22 @@
+.container {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .box {
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 50px; 
+  } 
