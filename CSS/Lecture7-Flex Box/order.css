@@ -1,0 +1,31 @@
+.container {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 50px;
+    /* flex-grow: 1; */
+}
+
+#box1 {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 4;
+}
+
+#box3 {
+    order: 8;
+    flex-grow: 1;
+}
+
+#box2 {
+    order: 4;
+}
