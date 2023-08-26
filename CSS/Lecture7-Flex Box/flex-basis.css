@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+    /* width: 50px; */
+    flex-basis: 100px;
+    /* Add margin for spacing between boxes */
+    margin: 5px;
+}
+
+#box1 {
+    /* Use "auto" to make the box stretch vertically */
+    align-self: stretch;
+}
+ 
