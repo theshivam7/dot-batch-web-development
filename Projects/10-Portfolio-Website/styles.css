@@ -7,4 +7,11 @@
     font-family: 'Be Vietnam Pro', sans-serif;
     scroll-behavior: smooth;
 }
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
 
