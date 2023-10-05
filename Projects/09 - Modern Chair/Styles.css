@@ -101,3 +101,20 @@ label.color-5 {
 label.color-6 {
     background-image: url("./Images/color6.jpg");
 }
+
+.img-wrap{
+    position: absolute ;
+    top: 100px;
+    left: 0;
+    height: 410px;
+    width: 500px;  
+    display: inline-block;
+    z-index: 9;
+    transition: all 550ms linear;
+    transition-delay: 100ms;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./Images/chair1.png);
+    opacity: 0;
+}
