@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -22,6 +24,7 @@ p {
     color: #fff;
     margin: 0;
 }
+
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -118,3 +121,313 @@ label.color-6 {
     background-image: url(./Images/chair1.png);
     opacity: 0;
 }
+
+.img-wrap.chair1 {
+    background-image: url("./Images/chair1.png");
+}
+
+.forColor-1:checked ~ .img-wrap.chair1 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair2 {
+    background-image: url("./Images/chair2.png");
+}
+
+.forColor-2:checked ~ .img-wrap.chair2 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair3 {
+    background-image: url("./Images/chair3.png");
+}
+
+.forColor-3:checked ~ .img-wrap.chair3 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair4 {
+    background-image: url("./Images/chair4.png");
+}
+
+.forColor-4:checked ~ .img-wrap.chair4 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair5 {
+    background-image: url("./Images/chair5.png");
+}
+
+.forColor-5:checked ~ .img-wrap.chair5 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair6 {
+    background-image: url("./Images/chair6.png");
+}
+
+.forColor-6:checked ~ .img-wrap.chair6 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0) rotate(-1deg);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0) rotate(2deg);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0) rotate(-3deg);
+    }
+    40%, 60% {
+        transform: translate3d(3px, 0, 0) rotate(3deg);
+    }
+}
+
+.backColor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    transition: all 250ms linear;
+    transition-delay: 300ms;
+}
+
+.backColor.chair2 {
+    background-image: linear-gradient(196deg, #4c4c4c, #262626);
+    opacity: 0;
+}
+.forColor-2:checked ~ .backColor.chair2 {
+    opacity: 1;
+}
+
+.backColor.chair3 {
+    background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+    opacity: 0;
+}
+
+.forColor-3:checked ~ .backColor.chair3 {
+    opacity: 1;
+}
+
+.backColor.chair4 {
+    background-image: linear-gradient(196deg, #97afc3, #6789a7);
+    opacity: 0;
+}
+.forColor-4:checked ~ .backColor.chair4 {
+    opacity: 1;
+}
+.backColor.chair5 {
+    background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+    opacity: 0;
+}
+
+.forColor-5:checked ~ .backColor.chair5 {
+    opacity: 1;
+}
+
+.backColor.chair6 {
+    background-image: linear-gradient(196deg, #aaadac, #838786);
+    opacity: 0;
+}
+
+.forColor-6:checked ~ .backColor.chair6 {
+    opacity: 1;
+}
+
+/* Info */
+
+.infoWrap {
+  position: relative;
+  margin-left: 500px;
+  z-index: 10;
+  display: block;
+  text-align: left;
+}
+
+.titleUp {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h4 span {
+  text-decoration: line-through;
+  font-size: 20px;
+  opacity: 0.6;
+  padding-left: 15px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.desc-Btn:checked + label,
+.desc-Btn:not(:checked) + label {
+  position: relative;
+  transition: all 200ms linear;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-right: 25px;
+  opacity: 0.5;
+}
+
+.desc-Btn:checked + label {
+  opacity: 1;
+}
+
+.desc-Btn:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.desc-sec {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all 250ms linear;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(20px);
+    color: #fff;
+}
+
+.desc-sec.accor2 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+#desc-1:checked ~ .desc-sec.accor-1 {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#desc-2:checked ~ .desc-sec.accor-2 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.section-inline {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.section-inline p span {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.btn {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    height: 48px;
+    border-radius: 4px;
+    width: 210px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    /* overflow: hidden; */
+    /* background-color: transparent; */
+    color: #fff;
+    box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15);
+    transition: all 250ms linear;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  .icon {
+    padding-right: 7px;
+    font-size: 20px;
+  }
+  .btn:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-color: #944852;
+    transition: background-color 250ms 300ms ease;
+  }
+  
+.btn:hover {
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+    background-color: #333;
+}
+  
+.forColor-2:checked ~ .infoWrap .btn:before {
+    background-color: #1a1a1a;
+}
+  
+.forColor-3:checked ~ .infoWrap .btn:before {
+    background-color: #40566e;
+}
+  
+.forColor-4:checked ~ .infoWrap .btn:before {
+    background-color: #5e89b2;
+}
+  
+.forColor-5:checked ~ .infoWrap .btn:before {
+    background-color: #8c7f76;
+}
+  
+.forColor-6:checked ~ .infoWrap .btn:before {
+    background-color: #5d6160;
+}
+  
+
+
