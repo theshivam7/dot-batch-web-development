@@ -14,4 +14,15 @@
     overflow-y: auto;
     scroll-behavior: smooth;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
 
