@@ -40,3 +40,26 @@
     margin-left: -1.7rem;
     font-size: 28px;
 }
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items div {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-items div:hover {
+    font-weight: bold;
+    transition: 1s;
+}
